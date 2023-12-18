@@ -1,227 +1,368 @@
-<!DOCTYPE html>
-<head>
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    color: #F7F4E2;
 
-<link rel="stylesheet" href="teststyles.css">
+    /*border: 1px solid red;*/
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quattrocento&family=Zen+Dots&display=swap" rel="stylesheet">
+body {
+    background-color: #223D40;
+}
 
-<title>McMillan Engineering - Firearm Division</title>
+h1 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+}
 
-</head>
+h2 {
+    font-size: 3em;
+    padding: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-<body>
+h4 {
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    padding: 0.5em;
 
-<header class="flex-container">
+}
 
-<nav>
-</nav>
+h2 {
+    font-size: 1.75em;
+    padding: 0.5em;
+}
 
-<!--Title banner -->
-<section class="title">
-<h1>McMillan Engineering -<br>
-Firearms Division</h1>
+ul {
+    margin: 1em;
+}
 
-<h4>Registered Firearms Dealer</h4>
-</section>
-
-<!-- Hero Image -->
-<section class="hero-image">
-  <img 
-    src="./ShotgunHero.jpg" 
-    alt=""
-    height=""
-    width="100%">
-
-  <section class="hero-text">
-    <h3>Get in touch</h3>
-    <p>Contact details</p>
-  </section>
-</section>
+li {
+    padding: 0.5em;
+    list-style-position: inside;
+    list-style-type: none;
+}
 
 
-</header>
+h3 {
+  
+}
 
-<main>
 
-<section class="shop">
 
-  <section class="box-container">
+h5 {
+   
+}
 
-    <h2>Shop Firearms</h2>
-
-    <section class="flex-container">
-
-      <div class="logo-box">
-        <img
-        src="./RugerLinear-W-300x62.png"
-        alt=""
-        height="auto"
-        width="150px">
-      </div>
-
-      <div class="logo-box">
-        <img
-        src="./marlin-logo-wo.png"
-        alt=""
-        height="auto"
-        width="150px">
-      </div>
-
-      <div class="logo-box">
-        <img
-        src="./Sako_1_.png"
-        alt=""
-        height="auto"
-        width="150px">
-      </div>
-
-    </section>
-
-    <section class="flex-container">
-
-      <a class="shop-box" href="">
-        Rifles
-      </a>
-
-      <a class="shop-box" href="">
-        Shotguns
-      </a>
-
-      <a class="shop-box" href="">
-        Ammunition
-      </a>
-
-    </section>
-
+p {
     
+}
 
-  </section>
-</section>
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-<section class="hero2">
-  <img
-  src="./McMillanHero2.jpg"
-  alt=""
-  width="100%"
-  heigth="">
-</section>
+hr.solid {
+  border-top: 3px solid #F7F4E2;
+}
 
-<hr>
+header{
+ 
+} 
 
-<section class="services">
-  <section class="box-container">
-    <section class="flex-container">
+nav {
+    
+}
 
-      <div class="service-box1">
-        <h2>Services</h2>
-      </div>
-      
-      <div class="service-box">
-        <p>RFD Transfer Services</p>
-      </div>
-
-      <div class="service-box">
-        <p>Insured Firearm Storage</p>
-        <p>Long term & Termporary</p>
-      </div>
-
-      <div class="service-box">
-        <p>Dry Storage</p>
-        <p>for ammunition & powders</p>
-      </div>
-    </section>
-  </section>
-</section> 
-
-<hr>
+.title {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #223D40;
+    margin: 0;
+    width: 100%;
+    max-width: 1400px;
+}
 
 
 
-<section class="gunsmithing">
-  <section class="box-container">
-    <div class="flex-container">
-      
-      <div class="gunsmithing-box1">
-        <h2>Gunsmithing Services</h2>
-        <p>With a well equiped workshop McMillan Engineering is able to offer a variety of services, carried out in house.</p>
-      </div>
+.hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
 
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
-      <div class="gunsmithing-box">
-        <p>Firearm Repair</p>
-      </div>
+.hero-text h3 {
+    color: #223D40;
+   
+}
 
-      <div class="gunsmithing-box">
-        <p>Service</p>
-      </div>
+.hero-text p {
+    color: #223D40;
+}
 
-      <div class="gunsmithing-box">
-        <p>Modification</p>
-      </div>
+.shop .box-container h2 {
+    font-size: 3em;
+    text-decoration: underline;
+}
 
-      <div class="gunsmithing-box">
-        <p>Fine Tuning</p>
-      </div>
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+}
 
-      <div class="gunsmithing-box">
-        <p>Re-Barrelling</p>
-      </div>
+.shop-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    /*width: 250px;*/
+    margin: 10px;
+    background-color: #211809;
 
-      <!--<div class="gunsmithing-box">
-        <p>Blueing</p>
-      </div>
+    text-decoration: none;
+    color: #F7F4E2;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    /*background-image: url(./RifleButton.jpg);
+    background-size: cover;
+    filter: brightness(50%);*/
+}
 
-      <div class="gunsmithing-box">
-        <p>Parkerizing</p>
-      </div>-->
+.shop-box p {
+    color: #F7F4E2;
+}
 
-      <div class="gunsmithing-box">
-        <p>Firearm Deactivation Service</p>
-      </div>
+/*.shop-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;*/
+}
 
-      <div class="gunsmithing-box-end">
-        <p>See more...</p>
-      </div>
+.shop-box:hover{
+    background-color: #223D40;
+    filter: brightness(80%);
+}
 
-    </div>
-  </section>
+.hero2 {
+    background-size: contain;
+    overflow: hidden;
+    height: 350px;
+}
 
-</section>
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    background-color: #223D40;
+}
 
-<section class="contact-us">
-  <h3>Get in touch:</h3>
-  <p>McMillan Engineering Ltd</p>
-  <p>Firearms Division</p>
-  <p>197 Broomloan Road</p>
-  <p>Govan</p>
-  <p>Glasgow</p>
-  <p>G51 2DH</p>
+.service-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    margin: 5px;
+    background-color: #223D40;
+}
 
-  <h3>Phone:</h3>
-  <p>0141 445 6517</p>
+.service-box p{
+    text-align: center;
+}
 
-  <h3>Email:</h3>
-  <p> info@mcmillanengineering.co.uk</p>
-</section>
+.gunsmithing {
+    background-color: #223D40;
+    margin: 0;
+}
 
-<h2>Sales Visits by Appointment Only</h2>
+.box-container {
+    max-width: 1400px;
+    margin: auto;
+}
 
+.gunsmithing p {
+    color: #223D40;
+}
 
+.gunsmithing h2 {
+    color: #223D40;
+}
 
+.gunsmithing-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    background-color: #223D40;
+}
 
+.gunsmithing-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    background-color: #223D40;
+}
 
-</main>
+.gunsmithing-box1 h2 {
+    font-size: 1.7em;
+    text-align: center;
+    color: #F7F4E2;
+}
 
-<footer>
+.gunsmithing-box1 p {
+    font-size: 0.9em;
+    text-align: center;
+    color: #F7F4E2;
+}
 
-<p>copyright McMillan Engineering 2023</p>
-</footer>
+.gunsmithing-box p{
+    color: #F7F4E2;
+    /*font-size: 1.5em;*/
+    text-align: center;
+}
 
-</body>
-</html>
+.gunsmithing-box-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    background-color: #223D40;
+}
+
+.gunsmithing-box-end p{
+    font-size: 0.9em;
+    text-align: center;
+    color: #F7F4E2;
+}
+
+.contact-us {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.contact-us h3 {
+    font-size: 2em;
+}
+
+footer p {
+    width: 100%;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    h1 {
+        font-size: 3em;
+    }
+    .hero-text h3 {
+    font-size: 1.5em;
+    }
+    .hero-text p {
+    font-size: 1.5em;
+    }
+    .shop-box {
+        width: 45%;
+    }
+    .hero-image {
+    width: 100%;
+    height: 450px;
+    }
+    .hero2 {
+    height: 450px;
+    }
+    .service-box1 h2{
+        font-size: 3em;
+    }
+    .gunsmithing-box1 {
+        max-width: 700px;
+    }
+    .gunsmithing-box1 h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    * {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    .hero-image {
+    width: 100%;
+    height: 600px;
+    }
+    .hero2 {
+    height: 600px;
+    }
+    .shop-box {
+        width: 250px;
+    }
+    .service-box1 h2 {
+        font-size: 3.5em;
+    }
+    .service-box {
+        height: 200px;
+        width: 200px;
+    }
+    .gunsmithing-box1 h2 {
+        font-size: 3.5em;
+    }
+    .gunsmithing-box {
+        height: 200px;
+        width: 200px;
+    }
+}
+
