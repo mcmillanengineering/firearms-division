@@ -1,0 +1,102 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+    color: #F7F4E2;
+
+    /*border: 1px solid red;*/
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rifle-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rifle-title h2 {
+    color: #223D40;
+    font-size: 2em;
+    flex: 2;
+    text-align: center;
+}
+
+.rifle-title p{
+    color: #223D40;
+    flex: 3;
+    padding: 10px;
+}
+
+.gun-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.gun-container img {
+    width: 100%
+}
+
+.gun-container h3 {
+    color: #223D40;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+hr {
+    border-top: 3px solid red;
+}
+
+.gun-container a {
+    text-decoration: none;
+}
+
+.gun-container h3:hover {
+    color: red;
+}
+
+.gun-container td {
+    color: #223D40;
+    border-bottom: 1px solid #223D40;
+    padding: 5px;
+}
+
+.gun-container table {
+    margin-bottom: 70px;
+}
+
+.details a {
+    background-color: #223D40;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.details a:hover {
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+}
+
+@media screen and (min-width: 769px) {
+    hr {
+        visibility: hidden;
+    }
+    .gun-container {
+        width: 48%;
+        border: 3px solid red;
+        margin: 5px;
+    }
+}
