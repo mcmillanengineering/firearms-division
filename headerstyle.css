@@ -1,15 +1,28 @@
+nav{
+    background-color: #223D40;
+}
+
+header {
+    background-color: #223D40;
+    width: 100%;
+}
+
  /*overlay for fullscreen menu*/
  /*flex container for curtain menu button*/
  .flex-container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    width: 100%;
+    margin: auto;
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
-  padding: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+  text-align: right;
 }
 
 .overlay {
@@ -52,9 +65,6 @@
   font-size: 50px;
 }
 
-header{
- 
-} 
 
 nav {
     
