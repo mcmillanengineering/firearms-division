@@ -36,6 +36,15 @@
     padding: 10px;
 }
 
+.rifle-category h3 {
+    color: #223D40;
+    background-color: #C1D9D2;
+    font-size: 2em;
+    line-height: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .gun-container {
     display: flex;
     flex-direction: column;
