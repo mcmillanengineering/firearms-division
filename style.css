@@ -125,6 +125,7 @@ hr.solid {
 }
 
 .dropdown-container {
+  display: none;
   background-color: #262626;
   padding-left: 8px;
 }
