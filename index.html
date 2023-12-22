@@ -36,7 +36,8 @@
 <div class="flex-container1">
   <span class="icon" onclick="openNav()">&#9776;</span>
 <div>
-
+  
+<!--script for curtain menu-->
 <script>
 function openNav() {
   document.getElementById("myNav").style.display = "block";
@@ -46,6 +47,7 @@ function closeNav() {
   document.getElementById("myNav").style.display = "none";
 }
 </script>
+<!-- end-->
 
 </nav>
 
@@ -64,6 +66,53 @@ FIREARMS DIVISION</h1>
   <a href="#">Rifles</a>
 </section>
 
+
+
+</header>
+
+<main>
+
+<section class="row">
+  <section class="side">
+
+    <div class="sidenav">
+      <a href="#">Home</a>
+      <button class="dropdown-btn">Shop
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Rifles</a>
+        <a href="#">Shotguns</a>
+        <a href="#">Ammunition</a>
+      </div>
+      <a href="#">Services</a>
+      <a href="#">Gunsmithing</a>
+      <a href="#">Contact</a>
+    </div>
+  </section>
+
+  <section class="main-article">
+
+<!-- script for dropdown in sidebar menu-->
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<!--end-->
+
 <!-- Hero Image -->
 <section class="hero-image">
   <img 
@@ -78,10 +127,6 @@ FIREARMS DIVISION</h1>
     <p>0141 445 6517</p>
   </section>
 </section>
-
-</header>
-
-<main>
 
 <section class="shop">
 
@@ -226,6 +271,7 @@ FIREARMS DIVISION</h1>
     </div>
   </section>
 
+</section>
 </section>
 
 <footer>
