@@ -118,6 +118,71 @@ nav {
     padding-left: 20px;
 }
 
+/*sidenav and curtain menu dropdown styles*/
+.row {
+    display: flex;
+}
+
+.side {
+    width: 25%;
+    background-color: #111;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  left: 0;
+  position: sticky;
+  top: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main-article {
+    width: 75%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.dropdown-container {
+    display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 14px solid #818181;
+    float: right;
+    margin-top: 5px;
+}
+
 @media screen and (min-width: 769px) {
   /*hide icon for larger screens*/
     .icon {
