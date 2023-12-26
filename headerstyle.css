@@ -117,3 +117,10 @@ nav {
     content: "/";
     padding-left: 20px;
 }
+
+@media screen and (min-width: 769px) {
+  /*hide icon for larger screens*/
+    .icon {
+        display: none;
+    }
+}
