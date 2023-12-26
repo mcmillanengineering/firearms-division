@@ -183,6 +183,27 @@ nav {
     margin-top: 5px;
 }
 
+/*media queries for sidenav and curtain menu*/
+@media screen and (max-width: 480px) and (min-width:1px) {
+    /*hide sidebar for smaller screens*/
+    .side {
+        display: none;
+    }
+    .main-article {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  /*hide sidebar for smaller screens*/
+    .side {
+        display: none;
+    }
+    .main-article {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 769px) {
   /*hide icon for larger screens*/
     .icon {
