@@ -421,10 +421,5 @@ hr.solid {
         height: 200px;
         width: 200px;
     }
-    
-    /*hide icon for larger screens*/
-    .icon {
-        display: none;
-    }
 }
 
