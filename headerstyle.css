@@ -209,4 +209,8 @@ nav {
     .icon {
         display: none;
     }
+
+    .breadcrumbflex {
+      padding-left: 25%;
+    }
 }
