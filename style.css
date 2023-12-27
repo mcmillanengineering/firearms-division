@@ -5,8 +5,9 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    color: #223D40;
 
-    color: #F7F4E2;
+    /*color: #F7F4E2;*/
 
     /*border: 1px solid red;*/
 }
