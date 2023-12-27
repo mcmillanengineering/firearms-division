@@ -92,15 +92,18 @@ hr.solid {
   top: 20px;
   right: 20px;
   color: #223D40;
+  text-decoration: none;
 }
 
 .hero-text h3 {
     color: #223D40;
-   
+    text-decoration: none;
+
 }
 
 .hero-text p {
     color: #223D40;
+    text-decoration: none;
 }
 
 .shop .box-container h2 {
