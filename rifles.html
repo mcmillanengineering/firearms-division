@@ -32,6 +32,7 @@
         <a href="#">Rifles</a>
         <a href="#">Shotguns</a>
         <a href="#">Ammunition</a>
+        <a href="https://www.guntrader.uk/dealers/glasgow/mcmillan-engineering/guns">Go to Guntrader Store</a>
       </div>
 
     <button class="dropdown-btn">Services
@@ -59,24 +60,6 @@
     <a href="#">Contact us</a>
   </div>
 </div>
-
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-</script>
 
 <div class="flex-container1">
   <span class="icon" onclick="openNav()">&#9776;</span>
