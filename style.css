@@ -54,6 +54,7 @@ li {
 
 
 h3 {
+    color: #223D40;
   
 }
 
@@ -98,10 +99,6 @@ hr.solid {
 
 .hero-text h3 {
     color: #223D40;
-    text-decoration: none;
-}
-
-.hero-text h3:link, h3:visited {
     text-decoration: none;
 }
 
