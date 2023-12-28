@@ -235,6 +235,10 @@ hr.solid {
     color: #F7F4E2;
 }
 
+.copyright {
+    color: #F7F4E2;
+}
+
 @media screen and (max-width: 480px) and (min-width:1px) {
     /*hide sidebar for smaller screens*/
     .side {
