@@ -5,68 +5,12 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    color: #223D40;
-
-    /*color: #F7F4E2;*/
 
     /*border: 1px solid red;*/
 }
 
 body {
     background-color: #223D40;
-}
-
-h1 {
-    font-size: 2em;
-    text-align: center;
-    padding: 1em;
-    color: #F7F4E2;
-}
-
-h2 {
-    font-size: 3em;
-    padding: 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h4 {
-    font-size: 1.5em;
-    text-align: center;
-    font-style: italic;
-    padding: 0.5em;
-
-}
-
-h2 {
-    font-size: 1.75em;
-    padding: 0.5em;
-}
-
-ul {
-    margin: 1em;
-}
-
-li {
-    padding: 0.5em;
-    list-style-position: inside;
-    list-style-type: none;
-}
-
-
-h3 {
-    color: #223D40;
-  
-}
-
-
-
-h5 {
-   
-}
-
-p {
-    
 }
 
 .flex-container {
@@ -94,24 +38,23 @@ hr.solid {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: #223D40;
-  text-decoration: none;
 }
 
 .hero-text h3 {
     color: #223D40;
-    text-decoration: none;
 }
 
 .hero-text p {
     color: #223D40;
-    text-decoration: none;
 }
 
-.shop .box-container h2 {
+.shop h2 {
     font-size: 3em;
+    text-align: center;
     text-decoration: underline;
+    text-transform: uppercase;
     color: #F7F4E2;
+    padding: 0.5em;
 }
 
 .logo-box {
@@ -155,13 +98,13 @@ hr.solid {
   border: 3px solid #f1f1f1;
   position: absolute;
   top: 50%;
-  left: 50%;
+   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 80%;
   padding: 20px;
-  text-align: center;*/
-}
+  text-align: center;
+}*/
 
 .shop-box:hover{
     background-color: #223D40;
@@ -172,6 +115,18 @@ hr.solid {
     background-size: contain;
     overflow: hidden;
     height: 350px;
+}
+
+.services h2 {
+    color: #F7F4E2;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.services p {
+    color: #F7F4E2;
 }
 
 .service-box {
@@ -210,13 +165,19 @@ hr.solid {
     margin: auto;
 }
 
-.gunsmithing p {
-    color: #223D40;
+.gunsmithing h2 {
+    color: #F7F4E2;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5em;
 }
 
-.gunsmithing h2 {
-    color: #223D40;
+.gunsmithing p {
+    color: #F7F4E2;
+    text-align: center;
 }
+
 
 .gunsmithing-box {
     display: flex;
@@ -238,24 +199,6 @@ hr.solid {
     background-color: #223D40;
 }
 
-.gunsmithing-box1 h2 {
-    font-size: 1.7em;
-    text-align: center;
-    color: #F7F4E2;
-}
-
-.gunsmithing-box1 p {
-    font-size: 0.9em;
-    text-align: center;
-    color: #F7F4E2;
-}
-
-.gunsmithing-box p{
-    color: #F7F4E2;
-    /*font-size: 1.5em;*/
-    text-align: center;
-}
-
 .gunsmithing-box-end {
     display: flex;
     flex-direction: column;
@@ -267,12 +210,6 @@ hr.solid {
     background-color: #223D40;
 }
 
-.gunsmithing-box-end p{
-    font-size: 0.9em;
-    text-align: center;
-    color: #F7F4E2;
-}
-
 .contact-us {
     width: 100%;
     max-width: 1400px;
@@ -280,8 +217,16 @@ hr.solid {
     padding-left: 30px;
 }
 
+.contact-us h2 {
+    color: #F7F4E2;
+}
 .contact-us h3 {
     font-size: 2em;
+    color: #F7F4E2;
+}
+
+.contact-us p {
+    color: #F7F4E2;
 }
 
 @media screen and (max-width: 480px) and (min-width:1px) {
@@ -353,7 +298,7 @@ hr.solid {
     .service-box1 h2 {
         font-size: 3.5em;
     }
-    .service-box {
+     .service-box {
         height: 200px;
         width: 200px;
     }
@@ -365,4 +310,3 @@ hr.solid {
         width: 200px;
     }
 }
-
