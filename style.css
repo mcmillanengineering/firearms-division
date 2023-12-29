@@ -48,6 +48,8 @@ hr.solid {
   position: absolute;
   top: 20px;
   right: 20px;
+  color: #223D40;
+  text-decoration: none;
 }
 
 .hero-text h3 {
@@ -57,6 +59,8 @@ hr.solid {
 .hero-text p {
     color: #223D40;
 }
+
+.hero-text a {
 
 .shop h2 {
     font-size: 3em;
