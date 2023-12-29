@@ -216,29 +216,6 @@ hr.solid {
     background-color: #223D40;
 }
 
-.contact-us {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    padding-left: 30px;
-}
-
-.contact-us h2 {
-    color: #F7F4E2;
-}
-.contact-us h3 {
-    font-size: 2em;
-    color: #F7F4E2;
-}
-
-.contact-us p {
-    color: #F7F4E2;
-}
-
-.copyright {
-    color: #F7F4E2;
-}
-
 @media screen and (max-width: 480px) and (min-width:1px) {
     /*hide sidebar for smaller screens*/
     .side {
