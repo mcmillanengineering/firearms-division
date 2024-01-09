@@ -1,0 +1,78 @@
+/*CSS for Services.html Webpage*/
+.services-title {
+    background-color: #fff;
+}
+.services-body {
+    background-color: #fff;
+}
+.services-title h2 {
+    color: #223D40;
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 0.5em;
+}
+.services-body h3 {
+    color: #223D40;
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: center;
+}
+.services-body p { 
+    color: #223D40;
+    padding: 0.5em;
+    line-height: 1.5;
+}
+
+/*CSS for Services Slideshow*/
+.mySlides {display: none;}
+img {
+    vertical-align: middle;
+    object-fit: cover;
+    height: 300px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0.5em;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    img {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 1025px) and (min-width: 769px) {
+    img {
+        height: 500px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    img {
+        height: 600px;
+    }
+}
+/*end of Services Slideshow*/
