@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+  
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="headerstyle.css">
+<link rel="stylesheet" href="footerstyle.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quattrocento&family=Zen+Dots&display=swap" rel="stylesheet">
+
+<title>McMillan Engineering - Firearm Division</title>
+
+</head>
+
+<body>
+
+<nav>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <!-- shop-->
+    <button class="dropdown-btn">Shop
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="rifles.html">Rifles</a>
+        <a href="#">Shotguns</a>
+        <a href="#">Ammunition</a>
+        <a href="https://www.guntrader.uk/dealers/glasgow/mcmillan-engineering/guns">Go to Guntrader Store</a>
+      </div>
+    <!--services-->
+    <button class="dropdown-btn">Services
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">RFD Transfer Services</a>
+        <a href="#">Insured Firearm Storage</a>
+        <a href="#">Dry Storage</a>
+      </div>
+      <!--Gunsmithing Services-->
+      <button class="dropdown-btn">Gunsmithing Services
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Firearm Repair</a>
+        <a href="#">Service</a>
+        <a href="#">Modification</a>
+        <a href="#">Fine Tuning</a>
+        <a href="#">Re-barreling</a>
+        <a href="#">Blueing</a>
+        <a href="#">Parkerizing</a>
+      </div>
+    <!--contact-->
+    <a href="#">Contact us</a>
+  </div>
+</div>
+
+<div class="flex-container1">
+  <span class="icon" onclick="openNav()">&#9776;</span>
+<div>
+  
+<!--script for curtain menu-->
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
+<!-- end-->
+
+</nav>
+
+<header class="flex-container">
+
+<!--Title banner -->
+<section class="title">
+<h1>McMILLAN ENGINEERING -<br>
+FIREARMS DIVISION</h1>
+
+<h4>Registered Firearms Dealer</h4>
+</section>
+
+</header>
+
+<main>
+
+<section class="row">
+  
+<section class="side">
+
+    <div class="sidenav">
+      <a href="#">Home</a>
+      <!--shop-->
+      <button class="dropdown-btn">Shop
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="rifles.html">Rifles</a>
+        <a href="#">Shotguns</a>
+        <a href="#">Ammunition</a>
+        <a href="https://www.guntrader.uk/dealers/glasgow/mcmillan-engineering/guns">Go to Guntrader Store</a>
+      </div>
+      <!-- services-->
+      <button class="dropdown-btn">Services
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">RFD Transfer Services</a>
+        <a href="#">Insured Firearm Storage</a>
+        <a href="#">Dry Storage</a>
+      </div>
+      <!--gunsmithing services-->
+      <button class="dropdown-btn">Gunsmithing Services
+        <div class="triangle-down"></div>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Firearm Repair</a>
+        <a href="#">Service</a>
+        <a href="#">Modification</a>
+        <a href="#">Fine Tuning</a>
+        <a href="#">Re-barreling</a>
+        <a href="#">Blueing</a>
+        <a href="#">Parkerizing</a>
+      </div>
+      <!--contact-->
+      <a href="#">Contact us</a>
+    </div>
+  </section>
+
+
+<section class="main-article">
+
+<!-- script for dropdown in sidebar menu-->
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<!--end-->
+
+<section class="services-title">
+    <div class="flex-container">
+        <h2>Services</h2>
+    </div>
+</section>
+
+<section class="services-body">
+    <div class="flex-container">
+        <h3>RFD Transfer Services</h3>
+        <p>An RFD transfer might be necessary if you live too far away to come and collect a rifle, or you are purchasing a rifle from elsewhere and would like to collect it from us.</p>
+        <p>Any authorised gun dealer in the nation may receive firearms from us, and we are also able to send firearms to other dealers. </p>
+        <p>For further information on the procedures involved in transferring a firearm, please get in touch with us.</p>
+
+        <h3>Insured Firearm Storage</h3>
+    
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img 
+          src="images/firearm-storage1.jpg" 
+          alt=""
+          height="300px"
+          width="100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img 
+          src="images/firearm-storage2.jpg"
+          alt=""
+          height="300px"
+          width="100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img 
+          src="images/firearm-storage3.jpg"
+          alt=""
+          height="300px"
+          width="100%"> 
+        </div>
+     <br>
+        <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+       </div>
+         
+    </div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <h3>Dry Storage for Ammunitions and Powders</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+</section>
+
+
+
+</section> <!--closes main-article section-->
+</section> <!--closes row section-->
+</main>
+
+
+<footer>
+
+<div class="footer-flex">
+  <img 
+  src="./image.png"
+  alt=""
+  width="300px"
+  height="">
+  
+<section class="contact-us">
+  <h3>Get in touch:</h3>
+  <p>McMillan Engineering Ltd</p>
+  <p>Firearms Division</p>
+  <p>197 Broomloan Road</p>
+  <p>Govan</p>
+  <p>Glasgow</p>
+  <p>G51 2JE</p>
+
+  <h3>Phone:</h3>
+  <p>0141 445 6517</p>
+
+  <h3>Email:</h3>
+  <p> info@mcmillanengineering.co.uk</p>
+
+  <h2>Sales Visits by Appointment Only</h2>
+  
+
+</section>
+</div>
+
+<hr>
+
+<section class="policy">
+  <a href=".privacy-policy.html">Privacy Policy</a>
+  <a href=".cookie-policy.html">Cookie Policy</a>
+</section>
+
+
+<p class="copyright">copyright McMillan Engineering 2023</p>
+
+</footer>
+
+</body>
+</html>
