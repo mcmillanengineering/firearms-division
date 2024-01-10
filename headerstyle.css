@@ -113,11 +113,10 @@ nav {
 }
 
 .title {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
     background-color: #223D40;
     margin: 0;
     width: 100%;
+    padding-top: 50px;
 }
 
 .title h1 {
