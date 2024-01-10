@@ -244,7 +244,7 @@ nav {
 
 @media screen and (min-width: 769px) {
   /*hide icon for larger screens*/
-    .icon {
+    .open-menu {
         display: none;
     }
 
