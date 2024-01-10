@@ -70,7 +70,7 @@ header {
 	overflow-x: hidden;
 	transition: 0.4s;
 }
-	
+/*styles for text within the curtain menus*/	
 nav a {
 	padding: 8px;
 	text-decoration: none;
@@ -78,11 +78,13 @@ nav a {
 	color: black;
 	display: block;
 }
-
 nav p {
   padding: 8px;
 }
-	
+nav small {
+  float: right;
+  margin-right: 40px;
+}
 a:hover, a:focus {
 	color: blue;
 }
