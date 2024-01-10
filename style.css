@@ -134,32 +134,10 @@ hr.solid {
     height: 350px;
 }
 
-.services h2 {
-    color: #F7F4E2;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0.5em;
-}
-.service-img {
-    object-fit: cover;
-    width: 80%;
-    padding: 1em;
-}
-
-.services p {
-    color: #F7F4E2;
-}
-
-.service-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    margin: 5px;
-    background-color: #223D40;
+/*SERVICES SECTION*/
+.services {
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .service-box1 {
@@ -167,15 +145,70 @@ hr.solid {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
     width: 100%;
     margin: 5px;
-    background-color: #223D40;
+    background-color: #fff;
 }
 
-.service-box p{
+.services h2 {
+    background-color: #fff;
+    color: #223D40;
+    font-size: 2.75em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+.service-img {
+    object-fit: cover;
+    width: 100%;
+    padding: 1em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.services p {
+    color: #223D40;
     text-align: center;
 }
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 30%;
+    background-color: #DFF2E2;
+    margin: 10px;
+    flex-grow: 1;
+    box-shadow: 1px 2px 5px 5px #bbb;
+}
+
+.services button {
+    padding: 0.5em;
+    line-height: 1.5;
+    width: 50%;
+    float: right;
+    margin: 1em 0.5em 1em 0em;
+    background-color: #557373;
+    text-align: right;
+}
+
+.services button a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.services button:hover {
+    background-color: #BB1921;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+/*END OF SERVICES SECTION*/
 
 .gunsmithing {
     background-color: #223D40;
