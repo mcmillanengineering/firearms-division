@@ -29,6 +29,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quattrocento&family=Zen+Dots&display=swap" rel="stylesheet">
 
+<!--Referencing external javascript file-->
+<script src="curtain-scripts.js"></script> 
+
 <title>McMillan Engineering - Firearm Division</title>
 
 </head>
@@ -37,62 +40,63 @@
 
 <nav>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="index.html">Home</a>
-    <!-- shop-->
-    <button class="dropdown-btn">Shop
-        <div class="triangle-down"></div>
-      </button>
-      <div class="dropdown-container">
-        <a href="rifles.html">Rifles</a>
+  <div id="myMenu" class="menu-overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+	  <div class="menu-content">
+      <a href="index.html">Home</a>
+	    <a href="#" onclick="openShopMenu()">Shop<small>&#10148;</small></span></a>
+	    <a href="#" onclick="openServiceMenu()">Services<small>&#10148;</small></a>
+	    <a href="#" onclick="openGunsmithingMenu()">Gunsmithing Services<small>&#10148;</small></a>
+      <a href="#">Contact us</a>
+      <p>0141 445 6517</p>
+      <p>info@mcmillanengineering.co.uk</p>
+	  </div>
+  </div>
+
+  <div id="shopMenu" class="shop-overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu2()">&times;</a>
+    <div class="shop-content menu-content">
+        <a href="#" onclick="openRifleMenu()">Rifles<small>&#10148;</small></a>
         <a href="#">Shotguns</a>
         <a href="#">Ammunition</a>
-        <a href="https://www.guntrader.uk/dealers/glasgow/mcmillan-engineering/guns">Go to Guntrader Store</a>
-      </div>
-    <!--services-->
-    <button class="dropdown-btn">Services
-        <div class="triangle-down"></div>
-      </button>
-      <div class="dropdown-container">
-        <a href="#">RFD Transfer Services</a>
-        <a href="#">Insured Firearm Storage</a>
-        <a href="#">Dry Storage</a>
-      </div>
-      <!--Gunsmithing Services-->
-      <button class="dropdown-btn">Gunsmithing Services
-        <div class="triangle-down"></div>
-      </button>
-      <div class="dropdown-container">
-        <a href="#">Firearm Repair</a>
-        <a href="#">Service</a>
-        <a href="#">Modification</a>
-        <a href="#">Fine Tuning</a>
-        <a href="#">Re-barreling</a>
-        <a href="#">Blueing</a>
-        <a href="#">Parkerizing</a>
-      </div>
-    <!--contact-->
-    <a href="#">Contact us</a>
+        <a href="https://www.guntrader.uk/dealers/glasgow/mcmillan-engineering/guns">Go to Guntrader Store<small>&#10148;</small></a>
+    </div>
   </div>
-</div>
 
-<div class="flex-container1">
-  <span class="icon" onclick="openNav()">&#9776;</span>
-<div>
-  
-<!--script for curtain menu-->
-<script>
-function openNav() {
-  document.getElementById("myNav").style.display = "block";
-}
+  <div id="serviceMenu"  class="service-overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu3()">&times;</a>
+    <div class="service-content menu-content">
+      <a href="#">RFD Transfer Services</a>
+      <a href="#">Insured Firearm Storage</a>
+      <a href="#">Dry Storage</a>
+    </div>
+  </div>
 
-function closeNav() {
-  document.getElementById("myNav").style.display = "none";
-}
-</script>
-<!-- end-->
+  <div id="gunsmithingMenu" class="gunsmithing-overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu4()">&times;</a>
+    <div class="gunsmithing-content menu-content">
+      <a href="#">Firearm Repair</a>
+      <a href="#">Service</a>
+      <a href="#">Modification</a>
+      <a href="#">Fine Tuning</a>
+      <a href="#">Re-barreling</a>
+      <a href="#">Blueing</a>
+      <a href="#">Parkerizing</a>
+    </div>
+  </div>
+
+  <div id="rifleMenu" class="rifle-overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu5()">&times;</a>
+    <div class="rifle-content menu-content">
+      <a href="rifles.html">See All Rifles<small>&#10148;</small></a>
+      <a href="#">Shop by Brand</a>
+      <a href="#">Shop by Calibre</a>
+      <a href="#">New Rifles</a>
+      <a href="#">Used Rifles</a>
+    </div>
+  </div>
+    
+  <span class= "open-menu" onclick="openMenu()">&#9776;</span>
 
 </nav>
 
@@ -107,7 +111,6 @@ FIREARMS DIVISION</h1>
 </section>
 
 </header>
-
 <main>
 
 <section class="row">
@@ -183,80 +186,70 @@ for (i = 0; i < dropdown.length; i++) {
 </section>
 
 <section class="services-body">
-    <div class="flex-container">
-        <h3>RFD Transfer Services</h3>
-        <p>An RFD transfer might be necessary if you live too far away to come and collect a rifle, or you are purchasing a rifle from elsewhere and would like to collect it from us.</p>
-        <p>Any authorised gun dealer in the nation may receive firearms from us, and we are also able to send firearms to other dealers. </p>
-        <p>For further information on the procedures involved in transferring a firearm, please get in touch with us.</p>
 
-        <h3>Insured Firearm Storage</h3>
+  <div class="ad-copy-container">
+    <h3 id="rfd-transfer">RFD Transfer Services</h3>
+      <p>An RFD transfer might be necessary if you live too far away to come and collect a rifle, or you are purchasing a rifle from elsewhere and would like to collect it from us.</p>
+        
+      <p>Any authorised gun dealer in the nation may receive firearms from us, and we are also able to send firearms to other dealers. </p>
+
+      <p>For further information on the procedures involved in transferring a firearm, please get in touch with us.</p>
     
-      <div class="slideshow-container">
+    <hr>
 
-        <div class="mySlides fade">
-          <img 
-          src="images/firearm-storage1.jpg" 
-          alt=""
-          height="300px"
-          width="100%">
-        </div>
+    <h3 id="insured-firearm-storage">Insured Firearm Storage</h3>
+    
+    
+    <img src="./images/HERO1.jpg"
+    alt=""
+    width="500"
+    height="300" />
+    
 
-        <div class="mySlides fade">
-          <img 
-          src="images/firearm-storage2.jpg"
-          alt=""
-          height="300px"
-          width="100%">
-        </div>
+    <p>At McMillan Engineering - Firearms Division we offer firearm storage at competitive rates. Firearms can be stored for long-term or short-term storage. Collection can be made during regular business hours, Monday to Friday 9am-5pm. Please arrange an appointment 48 hours before you plan to collect. If you wish to collect outside of regular business hours, a further fee of £25 will be applied. </p>
 
-        <div class="mySlides fade">
-          <img 
-          src="images/firearm-storage3.jpg"
-          alt=""
-          height="300px"
-          width="100%"> 
-        </div>
-     <br>
-        <div style="text-align:center">
-         <span class="dot"></span> 
-         <span class="dot"></span> 
-         <span class="dot"></span> 
-       </div>
-         
-    </div>
+    <p><strong>Plan 1:</strong></p>
+    <p>£20 per month up to the value of £3500, thereafter £5 per gun per week.</p>
+<p><strong>Plan 2:</strong></p>
+    <p>£30 per month up to the value of £7500, thereafter £7.50 per gun per week.</p>
 
-<script>
-let slideIndex = 0;
-showSlides();
+    <p><strong>Plan 3:</strong></p>
+    <p>£40 per month up to the value of £50,000, thereafter £10 per gun per week.</p>
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
+    <p>All plans include: <br>
+    Cleaning and oiling on arrival. <br>
+    Insurance against accidental damage, fire and theft while your guns are in our care.</p>
 
-</script>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <h3>Dry Storage for Ammunitions and Powders</h3>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-    </div>
+    <p>If you are unsure of the value of your firearm, please contact us. We are happy to provide a storage quote for firearms over the value of £50,000 as required. </p>
+
+    <p><strong>Terms and Conditions:</strong></p>
+    <p>A  valid shotgun certificate or firearm certificate is required to enter your firearms into storage.</p>
+
+    <p>Firearms will not be reissued from storage unless a  valid shotgun certificate or firearm certificate is provided at collection.</p>
+
+    <p>Guns with more than 3 months outstanding storage fees will be sold without further recourse to the owners. The proceeds from any such sales will be retained by McMillan Engineering.</p>
+
+    <hr>
+
+    <h3 id="dry-storage">Dry Storage for Ammunitions and Powders</h3>
+
+    <img src="./ShotgunHero.jpg"
+    alt=""
+    width=""
+    height="" />
+    <p>A flat fee of £20 applies to store centerfire or rimfire ammunition for up to one year.</p>
+    
+  </div>
+
 </section>
 
-
+<hr>
 
 </section> <!--closes main-article section-->
 </section> <!--closes row section-->
+
+
+
 </main>
 
 
@@ -264,10 +257,10 @@ function showSlides() {
 
 <div class="footer-flex">
   <img 
-  src="images/image.png"
+  src="./image.png"
   alt=""
   width="300px"
-  height="">
+  height="250px">
   
 <section class="contact-us">
   <h3>Get in touch:</h3>
@@ -301,6 +294,5 @@ function showSlides() {
 <p class="copyright">copyright McMillan Engineering 2023</p>
 
 </footer>
-
 </body>
 </html>
