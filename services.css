@@ -1,4 +1,8 @@
-/*CSS for Services.html Webpage*/
+.ad-copy-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .services-title {
     background-color: #fff;
 }
@@ -14,65 +18,55 @@
 .services-body h3 {
     color: #223D40;
     font-size: 2em;
-    padding: 0.5em;
-    text-align: center;
-}
-.services-body p { 
-    color: #223D40;
-    padding: 0.5em;
-    line-height: 1.5;
+    margin: auto;
+    padding: 0.3em;   
+    width: 100%;
+    max-width: 1000px;
 }
 
-/*CSS for Services Slideshow*/
-.mySlides {display: none;}
-img {
+.services-body p:nth-of-type(13) {
+    padding-top: 2.5em;
+}
+
+
+
+.services-body p { 
+    color: #223D40;
+    max-width: 1000px;
+    line-height: 1.5;
+    margin: auto;
+    padding: 0.3em;
+    width: 100%;
+}
+
+hr {
+    padding: 2em;
+    background-color: #fff;
+}
+
+.services-body img {
     vertical-align: middle;
+    width: 100%;
     object-fit: cover;
-    height: 300px;
+    overflow: hidden;
+    padding: 1em;
+    height: 250px;
+    max-width: 1000px;
+    margin: auto;
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  width: 100%;
-  position: relative;
-  margin: auto;
-  padding: 0.5em;
-}
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+
 @media screen and (max-width: 768px) and (min-width: 481px) {
-    img {
-        height: 400px;
+    .services-body img {
+        height:350px;
     }
 }
 @media screen and (max-width: 1025px) and (min-width: 769px) {
-    img {
-        height: 500px;
+    .services-body img {
+        height: 450px;
     }
 }
 @media screen and (min-width: 1025px) {
-    img {
-        height: 600px;
+    .services-body img {
+        height: 500px;
     }
 }
-/*end of Services Slideshow*/
