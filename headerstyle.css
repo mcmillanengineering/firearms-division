@@ -1,20 +1,21 @@
 nav{
-    background-color: #223D40;
+	background-color: #223D40;
 }
 
 header {
-    background-color: #223D40;
-    width: 100%;
+	background-color: #223D40;
+	width: 100%;
 }
 /*overlay for curtain menus*/
 .menu-overlay {
-  height: 0%;
-  width:100%;
+	height: 0%;
+  	width:100%;
 	position: fixed;
 	z-index: 1;
 	left: 0;
 	top: 0;
 	background-color: white;
+	color: #223D40;
 	overflow-x: scroll;
 	transition: 0.4s;
 }
@@ -22,13 +23,13 @@ header {
 .menu-content {
 	position: relative;
 	top: 15%;
-  width: 100%;
+  	width: 100%;
 	text-align: left;
 	margin-top: 30px;
 }
 .shop-overlay {
-  height: 0%;
-  width:100%;
+  	height: 0%;
+  	width:100%;
 	position: fixed;
 	z-index: 2;
 	left: 0;
@@ -38,7 +39,7 @@ header {
 	transition: 0.4s;
 }
 .service-overlay {
-  height: 0%;
+  	height: 0%;
 	width:100%;
 	position: fixed;
 	z-index: 2;
@@ -49,7 +50,7 @@ header {
 	transition: 0.4s;
 }
 .gunsmithing-overlay {
-  height: 0%;
+  	height: 0%;
 	width:100%;
 	position: fixed;
 	z-index: 2;
@@ -60,7 +61,7 @@ header {
 	transition: 0.4s;
 }
 .rifle-overlay {
-  height: 0%;
+  	height: 0%;
 	width:100%;
 	position: fixed;
 	z-index: 2;
@@ -79,14 +80,14 @@ nav a {
 	display: block;
 }
 nav p {
-  padding: 8px;
+	padding: 8px;
 }
 nav small {
-  float: right;
-  margin-right: 40px;
+	float: right;
+	margin-right: 40px;
 }
 a:hover, a:focus {
-	color: blue;
+	color: #223D40;
 }
 .overlay-menu .closebtn {
 	position: absolute;
@@ -96,17 +97,17 @@ a:hover, a:focus {
 }
 .closebtn {
 	position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 40px;
+  	top: 20px;
+  	right: 20px;
+  	font-size: 40px;
 }
 span {
 	font-size: 40px;
-  color: #f1f1f1;
+  	color: #f1f1f1;
 	cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  	position: absolute;
+  	top: 20px;
+  	right: 20px;
 }
 /*end of curtain menus*/
 
@@ -115,101 +116,103 @@ nav {
 }
 
 .title {
-    background-color: #223D40;
-    margin: 0;
-    width: 100%;
-    padding-top: 50px;
+    	background-color: #223D40;
+    	margin: 0;
+    	width: 100%;
+    	padding-top: 50px;
 }
 
 .title h1 {
-    font-size: 2em;
-    text-align: center;
-    padding: 1em;
-    color: #F7F4E2;
+    	font-size: 2em;
+    	text-align: center;
+    	padding: 1em;
+    	color: #F7F4E2;
 }
 
 .title h4 {
-    font-size: 1.5em;
-    text-align: center;
-    font-style: italic;
-    padding: 0.5em;
-    color: #F7F4E2;
+    	font-size: 1.5em;
+    	text-align: center;
+    	font-style: italic;
+    	padding: 0.5em;
+    	color: #F7F4E2;
 }
 
 .breadcrumbflex {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #223D40;
-    width: 100%;
+    	display: flex;
+    	flex-wrap: wrap;
+    	background-color: #223D40;
+    	width: 100%;
 }
 
 .breadcrumbflex a {
-    padding: 10px;
-    text-decoration: none;
+    	padding: 10px;
+   	text-decoration: none;
+	color: #fff;
 }
 
 .breadcrumbflex a:hover {
-    text-decoration: underline;
+    	text-decoration: underline;
+	color: #BB1921;
 }
 
 .breadcrumbflex a:not(:last-child)::after {
-    content: "/";
-    padding-left: 20px;
+    	content: "/";
+    	padding-left: 20px;
 }
 
 /*sidenav and curtain menu dropdown styles*/
 .row {
-    display: flex;
+    	display: flex;
 }
 
 .side {
-    width: 25%;
-    background-color: #111;
+	width: 25%;
+	background-color: #111;
 }
 
 /* Fixed sidenav, full height */
 .sidenav {
-  left: 0;
-  position: sticky;
-  top: 0px;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 10px;
+	left: 0;
+	position: sticky;
+	top: 0px;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
 }
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+  	padding: 6px 8px 6px 16px;
+  	text-decoration: none;
+  	font-size: 20px;
+  	color: #818181;
+  	display: block;
+  	background: none;
+  	border: none;
+ 	width: 100%;
+  	text-align: left;
+  	cursor: pointer;
+  	outline: none;
 }
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  	color: #f1f1f1;
 }
 
 /* Main content */
 .main-article {
-    width: 75%;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
+    	width: 75%;
+    	font-size: 20px;
+    	display: flex;
+    	flex-direction: column;
   
 }
 
 .dropdown-container {
-    display: none;
-  background-color: #262626;
-  padding-left: 8px;
+    	display: none;
+  	background-color: #262626;
+  	padding-left: 8px;
 }
 
 .triangle-down {
@@ -218,38 +221,38 @@ nav {
 	border-left: 7px solid transparent;
 	border-right: 7px solid transparent;
 	border-top: 14px solid #818181;
-    float: right;
-    margin-top: 5px;
+    	float: right;
+    	margin-top: 5px;
 }
 
 /*media queries for sidenav and curtain menu*/
 @media screen and (max-width: 480px) and (min-width:1px) {
     /*hide sidebar for smaller screens*/
-    .side {
-        display: none;
-    }
-    .main-article {
-        width: 100%;
-    }
+	.side {
+		display: none;
+	}
+    	.main-article {
+        	width: 100%;
+    	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
   /*hide sidebar for smaller screens*/
-    .side {
-        display: none;
-    }
-    .main-article {
-        width: 100%;
-    }
+    	.side {
+        	display: none;
+    	}
+    	.main-article {
+       		width: 100%;
+    	}
 }
 
 @media screen and (min-width: 769px) {
   /*hide icon for larger screens*/
-    nav span {
-        display: none;
-    }
+    	nav span {
+        	display: none;
+    	}
 
-    .breadcrumbflex {
-      padding-left: 25%;
-    }
+    	.breadcrumbflex {
+      		padding-left: 25%;
+    	}
 }
