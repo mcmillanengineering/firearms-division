@@ -65,7 +65,7 @@
 }
 
 hr {
-    border-top: 3px solid red;
+    border-top: 3px solid #BB1921;
 }
 
 .gun-container a {
@@ -73,7 +73,7 @@ hr {
 }
 
 .gun-container h3:hover {
-    color: red;
+    color: #BB1921;
 }
 
 .gun-container td {
@@ -96,7 +96,7 @@ hr {
 }
 
 .details a:hover {
-    background-color: red;
+    background-color: #BB1921;
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -108,7 +108,7 @@ hr {
     }
     .gun-container {
         width: 48%;
-        border: 3px solid red;
+        border: 3px solid #BB1921;
         margin: 5px;
     }
 }
