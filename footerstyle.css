@@ -1,63 +1,79 @@
- footer {
-    background-color: #223D40;
- }
+footer {
+    background-color: #557480;
+}
 
- footer img {
+footer img {
     width: 100%;
- }
- 
- .contact-us {
+}
+
+footer hr {
+    border: none;
+    border-top: 0.5em solid white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1em 0 1em 0;
+}
+
+a[x-apple-data-detectors].footer-phone {
+  color: white !important;
+  text-decoration: none !important;
+  /*font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;*/
+}
+
+.contact-us {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding-left: 30px;
-    background-color: #223D40;
-}
-
-.contact-us h2 {
-    font-size: 1.8em;
-    padding: 0.5em;
-    text-transform: uppercase;
-    width: 100%;
-    color: #F7F4E2;
+    padding: 10px;
+    background-color: #557480;
 }
 
 .contact-us h3 {
     font-size: 2em;
     padding: 0.5em;
-    color: #F7F4E2;
+    color: white;
 } 
 
+.caps {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .contact-us p {
-    color: #F7F4E2;
+    color: white;
 }
 
 .footer-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    object-fit: cover;
 }
 
 .policy {
     display: flex;
     justify-content: center;
-    line-height: 3em;
+    line-height: 2em;
 }
 
 .policy a {
     text-decoration: none;
-    color: #F7F4E2;
+    color: white;
     padding: 1em;
 }
 
 .policy a:hover {
-    color: #C1D9D2;
+    color: #BB1921;
+    transition: linear 0.1s;
 }
 
 .copyright {
+    color: white;
     text-align: right;
     padding: 5px;
-    color: #F7F4E2;
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
