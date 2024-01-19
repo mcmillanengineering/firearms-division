@@ -9,31 +9,16 @@
     /*border: 1px solid red;*/
 }
 
-body {
-    background-color: #223D40;
-}
-
-/*fix for iphone font color*/
-a[x-apple-data-detectors] {
- color: inherit !important;
- text-decoration: none !important;
- font-size: inherit !important;
- font-family: inherit !important;
- font-weight: inherit !important;
- line-height: inherit !important;
-}
-
+/*containers*/
 .container {
     max-width: 1000px;
     margin: auto;
 }
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 img-container {
     max-width: 1000px;
     margin: auto;
@@ -42,19 +27,61 @@ img-container {
     justify-content: center;
     align-items: center;
 }
-
 .box-container {
     max-width: 1000px;
     margin: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 hr.solid {
-  border-top: 3px solid #F7F4E2;
+    border: none;
+  border-top: 1em dotted #B08E58;
+  background-color: #fff;
+  margin: 1em;
+  max-width: 1000px;
 }
+
+h2 {
+    background-color: #fff;
+    color: #2A3C54;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2;
+    margin: 0.75em;
+}
+
+button.learn-more {
+    padding: 0.5em;
+    line-height: 1.5;
+    width: 50%;
+    float: right;
+    margin: 1em 0.5em 1em 0em;
+    background-color: #557480;
+    text-align: right;
+    border: none;
+}
+
+button.learn-more a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button.learn-more:hover {
+    background-color: #BB1921;
+    transition: linear 0.1s;
+    cursor: pointer;
+}
+
 
 .hero-image {
     background-position: center;
@@ -88,12 +115,16 @@ hr.solid {
     text-decoration: none;
 }
 
+.shop {
+    background-color: #223D40;
+}
+
 .shop h2 {
-    font-size: 3em;
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
     color: #F7F4E2;
+    background-color: #223D40;
     padding: 0.5em;
 }
 
@@ -162,25 +193,6 @@ hr.solid {
     background-color: #fff;
     overflow: hidden;
 }
-
-.service-box1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 5px;
-    background-color: #fff;
-}
-
-.services h2 {
-    background-color: #fff;
-    color: #223D40;
-    font-size: 2.75em;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.5;
-}
 .service-img {
     object-fit: cover;
     width: 100%;
@@ -189,106 +201,64 @@ hr.solid {
     margin: auto;
 }
 
-.services p {
-    color: #223D40;
-    text-align: center;
+.services a {
+    width: 100%;
+    margin: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #2A3C54;
 }
 
-.service-box {
+a .service-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 30%;
-    background-color: #DFF2E2;
-    margin: 10px;
-    flex-grow: 1;
-    box-shadow: 1px 2px 5px 5px #bbb;
-}
-
-.services button {
-    padding: 0.5em;
-    line-height: 1.5;
-    width: 50%;
-    float: right;
-    margin: 1em 0.5em 1em 0em;
-    background-color: #557373;
-    text-align: right;
-}
-
-.services button a {
-    color: #fff;
-    text-decoration: none;
-    padding-right: 20px;
-    display: block;
+    justify-content: center;
+    text-align: center;
     width: 100%;
-    height: 100%;
+    min-height: 80px;
+    background-color: #DCE1E3;  
 }
 
-.services button:hover {
-    background-color: #BB1921;
-    transition: linear 0.2s;
-    cursor: pointer;
+a .service-box:hover {
+    color: #BB1921;
+    transition: linear 0.1s;
 }
 /*END OF SERVICES SECTION*/
 
+/*GUNSMITHING SECTION*/
 .gunsmithing {
-    background-color: #223D40;
+    background-color: #fff;
+    overflow: hidden;
     margin: 0;
 }
-
-.box-container {
-    max-width: 1400px;
-    margin: auto;
-}
-
-.gunsmithing h2 {
-    color: #F7F4E2;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0.5em;
-}
-
 .gunsmithing p {
-    color: #F7F4E2;
+    color: #2A3C54;
     text-align: center;
+    padding: 10px;
 }
-
-
+.gunsmithing .box-container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
 .gunsmithing-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 150px;
-    margin: 5px;
-    background-color: #223D40;
+    width: 48%;
+    margin: 0.10em;
+    background-color: #557480;
 }
-
-.gunsmithing-box1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 5px;
-    background-color: #223D40;
+.gunsmithing-box p {
+    color: #fff;
 }
+/*END OF GUNSMITHING SECTION*/
 
-.gunsmithing-box-end {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    margin: 5px;
-    background-color: #223D40;
-}
-
-@media screen and (max-width: 480px) and (min-width:1px) {
+@media screen and (max-width: 320px) and (min-width: 1px) {
     /*hide sidebar for smaller screens*/
     .side {
         display: none;
@@ -296,14 +266,18 @@ hr.solid {
     .main-article {
         width: 100%;
     }
-    /*items inside box-container*/
-    .box-container {
-        flex-direction: column;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    /*hide sidebar for smaller screens*/
+    .side {
+        display: none;
     }
-    .service-box {
-        height: auto;
+    .main-article {
         width: 100%;
-        min-height: 60px;
+    }
+    h2 {
+        font-size: 1.9em;
     }
 }
 
@@ -311,6 +285,11 @@ hr.solid {
     h1 {
         font-size: 3em;
     }
+
+    /*updated*/h2 {
+        font-size: 2.5em;
+    }
+
     .hero-text h3 {
     font-size: 1.5em;
     }
@@ -326,15 +305,6 @@ hr.solid {
     }
     .hero2 {
     height: 450px;
-    }
-    .service-box1 h2{
-        font-size: 3.5em;
-    }
-    .gunsmithing-box1 {
-        max-width: 700px;
-    }
-    .gunsmithing-box1 h2 {
-        font-size: 3em;
     }
 
     /*hide sidebar for smaller screens*/
@@ -353,6 +323,11 @@ hr.solid {
     h1 {
         font-size: 3.5em;
     }
+
+    /*updated*/h2 {
+        font-size: 3em;
+    }
+
     .hero-image {
     width: 100%;
     height: 600px;
@@ -363,19 +338,24 @@ hr.solid {
     .shop-box {
         width: 250px;
     }
-    .service-box1 h2 {
-        font-size: 4em;
+
+    /*updated*/.service-box {
+        height: 8em;
     }
-    .service-box {
-        height: 200px;
-        width: 200px;
+    /*updated*/.gunsmithing-box {
+        height: 8em;
     }
-    .gunsmithing-box1 h2 {
-        font-size: 3.5em;
+
+    /*styles for box containers*/
+    .box-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1em 0 1em;
     }
-    .gunsmithing-box {
-        height: 200px;
-        width: 200px;
+    .services a {
+        width: 30%;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -386,6 +366,11 @@ hr.solid {
     h1 {
         font-size: 3.5em;
     }
+    /*updated*/h2 {
+        font-size: 3.5em;
+        line-height: 1.25;
+
+    }
     .hero-image {
     width: 100%;
     height: 600px;
@@ -396,18 +381,23 @@ hr.solid {
     .shop-box {
         width: 250px;
     }
-    .service-box1 h2 {
-        font-size: 3.5em;
+
+    /*updated*/.service-box {
+        height: 10em;
     }
-    .service-box {
-        height: 200px;
-        width: 200px;
+    /*updated*/.gunsmithing-box {
+        height: 10em;
     }
-    .gunsmithing-box1 h2 {
-        font-size: 3.5em;
+
+    /*styles for box containers*/
+    .box-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1em 0 1em;
     }
-    .gunsmithing-box {
-        height: 200px;
-        width: 200px;
+    .services a {
+        width: 30%;
+        margin: 0;
+        padding: 0;
     }
 }
