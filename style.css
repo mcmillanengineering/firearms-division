@@ -49,7 +49,7 @@ hr.solid {
 h2 {
     background-color: #fff;
     color: #2A3C54;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-transform: uppercase;
     text-align: center;
     line-height: 2;
@@ -277,7 +277,7 @@ a .service-box:hover {
         width: 100%;
     }
     h2 {
-        font-size: 1.9em;
+        font-size: 2.1em;
     }
 }
 
