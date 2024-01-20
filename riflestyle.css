@@ -104,9 +104,9 @@ hr {
 }
 
 @media screen and (min-width: 769px) {
-    hr {
+    /*hr {
         visibility: hidden;
-    }
+    }*/
     .gun-container {
         width: 48%;
         border: 3px solid #BB1921;
