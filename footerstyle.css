@@ -11,7 +11,7 @@ footer hr {
     border-top: 0.5em solid white;
     max-width: 1000px;
     margin: auto;
-    padding: 1em 0 1em 0;
+    margin-top: 2em;
 }
 
 a[x-apple-data-detectors].footer-phone {
@@ -51,6 +51,23 @@ a[x-apple-data-detectors].footer-phone {
     flex-wrap: wrap;
     justify-content: center;
     object-fit: cover;
+}
+
+footer .social-container {
+    font-size: 40px;
+}
+footer .fa-facebook {
+  background: #7A919D;
+}
+footer .fa-twitter {
+  background: #7A919D;
+}
+footer .fa-instagram {
+  background: #7A919D
+}
+footer .fa:hover {
+    color: #BB1921;
+    transition: linear 0.1s;
 }
 
 .policy {
