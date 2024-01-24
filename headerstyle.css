@@ -277,6 +277,13 @@ nav {
     	margin-top: 5px;
 }
 
+
+@media screen and (max-width:370px) and (min-width:1px) {
+  .title h1 {
+    font-size: 1.6em;
+  }
+}
+
 /*media queries for sidenav and curtain menu*/
 @media screen and (max-width: 480px) and (min-width:1px) {
     /*hide sidebar for smaller screens*/
